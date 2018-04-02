@@ -1,0 +1,6 @@
+
+
+<text>Hello world</text>
+
+<button type="default" hover-class="other-button-hover"> default </button>
+<button type="primary" > primary </button>
