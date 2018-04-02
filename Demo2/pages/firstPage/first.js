@@ -4,7 +4,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    text : "This is the content",
+    buttonText : "This is a button",
+    flag : true,
+    data : ['aaa', 'bbb', 'ccc'],
   },
 
   /**
@@ -61,5 +64,31 @@ Page({
    */
   onShareAppMessage: function () {
     
-  }
+  },
+
+  buttonOnClick: function(){
+    console.log("The button was clicked")
+
+    var isShow = this.data.flag
+    console.log("isShow :" + isShow)
+
+    var array = this.data.data
+    array.shift()
+
+    if (isShow == true) {
+      isShow = false
+    } else {
+      isShow = true
+    }
+
+
+    this.setData({
+      buttonText: "This is a New Button",
+      text: "This is a New Content, too",
+      flag: isShow,
+      data : array,
+    })
+
+
+  },
 })
