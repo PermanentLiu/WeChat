@@ -9,3 +9,9 @@ height: 400rpx;
 width: 80%;
 background-color: greenyellow;
 }
+
+.view3{
+height: 200rpx;
+width: 50%;
+background-color: blueviolet;
+}
