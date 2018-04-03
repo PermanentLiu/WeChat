@@ -1,14 +1,14 @@
-<view class="view1">
+<view class="view1" bindtap="view1OnClick">
   view 1
-  <view class="view2">
-    view 2
-    <view class="view3">
 
+  <view class="view2" bindtap="view2OnClick">
+    view 2
+
+    <view class="view3" bindtap="view3OnClick">
       view 3
     
     </view>
   
   </view>
-
 
 </view>
