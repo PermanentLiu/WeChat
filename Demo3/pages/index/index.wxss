@@ -1,7 +1,7 @@
 .view1{
 height: 500rpx;
 width: 100%;
-background-color: rebeccapurple;
+background-color: royalblue;
 }
 
 .view2{
@@ -11,7 +11,7 @@ background-color: greenyellow;
 }
 
 .view3{
-height: 200rpx;
+height: 2000rpx;
 width: 50%;
 background-color: blueviolet;
 }
