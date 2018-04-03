@@ -10,6 +10,15 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
+  view1OnClick: function(){
+    console.log("1111111")
+  },
+  view2OnClick: function () {
+    console.log("22222222")
+  },
+  view3OnClick: function () {
+    console.log("33333333")
+  },
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
@@ -22,7 +31,7 @@ Page({
         hasUserInfo: true
       })
     } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
+      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回1
       // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {
         this.setData({
