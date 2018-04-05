@@ -1,9 +1,18 @@
 <!--index.wxml-->
 <view class="container">
 
-  <input  bindinput="bindKeyInput" placeholder="输入同步到view中" type="number"/>
-  <view class="section__title">你输入的是：{{inputValue}}</view>
+  <input style="text-align:center" bindinput="bindKeyInput" placeholder="请输入手机号" type="number"/>
 
-  <textarea placeholder="这是一个可以自动聚焦的textarea" auto-focus />
+
+  <button type="primary">
+    查询
+  </button>
+
+
+  <view class="section__title" bindtap="buttonOnClick">
+    你输入的是：{{inputValue}}
+  </view>
+
+  
   
 </view>

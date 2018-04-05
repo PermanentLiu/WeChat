@@ -33,6 +33,22 @@ App({
       }
     })
   },
+
+  getPhoneInfo(phone){
+    wx.request({
+      url: 'http://apis.juhe.cn/mobile/get?phone='+phone, 
+      data: {
+        x: '',
+        y: ''
+      },
+
+      success: function (res) {
+        console.log(res.data)
+      }
+    })
+  },
+
+
   globalData: {
     userInfo: null
   }
