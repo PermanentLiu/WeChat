@@ -9,12 +9,12 @@
   </button>
 
 
-  <view>
+  <view position-fixed="left">
     运营商：{{returnedCompanyInfo}}
   </view>
 
-  <view>
-    结果：{{returnedLocationInfo}}
+  <view position-fixed="left">
+    所在地：{{returnedLocationInfo}}
   </view>
 
   

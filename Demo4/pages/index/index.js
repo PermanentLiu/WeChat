@@ -17,11 +17,11 @@ Page({
 
   buttonOnClick: function(){
     var tempInfo = this
-    // console.log(this.data.inputValue)
+    console.log(this.data.inputValue)
     app.getPhoneInfo(this.data.inputValue, function(data){
       console.log(data)
       tempInfo.setData({
-        returnedCompanyInfo: data.result.company,
+        returnedCompanyInfo:"中国" + data.result.company,
         returnedLocationInfo: data.result.province + data.result.city,
       })
     });
