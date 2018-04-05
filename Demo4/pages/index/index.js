@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
     data:{
-      inputValue: '',
+      inputValue: null,
   },
 
   bindKeyInput: function(e){
@@ -14,7 +14,8 @@ Page({
   },
 
   buttonOnClick: function(){
-    app.getPhoneInfo('13667835515', function(data){
+    console.log(this.data.inputValue)
+    app.getPhoneInfo(this.data.inputValue, function(data){
       console.log(data)
     });
   },
