@@ -9,8 +9,9 @@
   </button>
 
 
-  <view class="section__title" bindtap="buttonOnClick">
+  <view>
     你输入的是：{{inputValue}}
+    结果：{{returnedInfo}}
   </view>
 
   
