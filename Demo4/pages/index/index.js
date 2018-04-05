@@ -3,12 +3,19 @@
 const app = getApp()
 
 Page({
-  data:{
-    inputValue: '',
-},
+    data:{
+      inputValue: '',
+  },
+
   bindKeyInput: function(e){
     this.setData({
       inputValue: e.detail.value
     })
+  },
+
+  buttonOnClick: function(){
+    app.getPhoneInfo('13667835515', function(data){
+      console.log(data)
+    });
   },
 })

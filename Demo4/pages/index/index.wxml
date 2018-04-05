@@ -4,7 +4,7 @@
   <input style="text-align:center" bindinput="bindKeyInput" placeholder="请输入手机号" type="number"/>
 
 
-  <button type="primary">
+  <button type="primary" bindtap="buttonOnClick">
     查询
   </button>
 
