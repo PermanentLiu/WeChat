@@ -1,0 +1,26 @@
+/**index.wxss**/
+input{
+  /* background-color: #00dbae; */
+  border-radius: 50px;
+  border: 2px solid #00dbae;
+  width: 80%;
+  height: 100%;
+  margin: 5%;
+  padding: 10px;
+
+}
+
+button{
+  background-color: #00dbae;
+  width: 645rpx;
+  height: 105rpx;
+  margin: 5%;
+  padding: 10px;
+  border-radius: 50px;
+  line-height: 60rpx;
+
+}
+
+button text{
+  vertical-align: middle;
+}
