@@ -4,9 +4,10 @@ App({
 
   getPhoneInfo(phone, info){
     wx.request({
-      url: 'http://apis.juhe.cn/mobile/get?phone='+parseInt(phone), 
+      url: 'http://apis.juhe.cn/mobile/get?key=e4d4151244869fb453b467f4c9c46ecf', 
       data: {
         // "phone":phone
+        "phone": parseInt(phone)
       },
 
       success: function (res) {
