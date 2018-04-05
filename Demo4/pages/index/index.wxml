@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
 
-  <input style="text-align:center" bindinput="bindKeyInput" placeholder="请输入手机号" type="number"/>
+  <input style="text-align:left" maxlength='-1' bindinput="bindKeyInput" placeholder="请输入手机号" type="number" confirm-type="search"confirm-hold='true'/>
 
 
   <button type="primary" bindtap="buttonOnClick" style='background-color:#00dbae'>
@@ -10,8 +10,11 @@
 
 
   <view>
-    你输入的是：{{inputValue}}
-    结果：{{returnedInfo}}
+    运营商：{{returnedCompanyInfo}}
+  </view>
+
+  <view>
+    结果：{{returnedLocationInfo}}
   </view>
 
   

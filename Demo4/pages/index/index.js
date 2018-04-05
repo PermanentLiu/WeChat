@@ -5,7 +5,8 @@ const app = getApp()
 Page({
     data:{
       inputValue: null,
-      returnedInfo: null,
+      returnedCompanyInfo: null,
+      returnedLocationInfo: null,
   },
 
   bindKeyInput: function(e){
@@ -20,7 +21,8 @@ Page({
     app.getPhoneInfo(this.data.inputValue, function(data){
       console.log(data)
       tempInfo.setData({
-        returnedInfo: data.result.province + data.result.city
+        returnedCompanyInfo: data.result.company,
+        returnedLocationInfo: data.result.province + data.result.city,
       })
     });
   },
