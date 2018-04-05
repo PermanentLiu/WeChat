@@ -1,7 +1,5 @@
 <!--index.wxml-->
 <view class="container">
-  <input placeholder="这是一个可以自动聚焦的input" auto-focus/>
-
 
   <input  bindinput="bindKeyInput" placeholder="输入同步到view中"/>
   <view class="section__title">你输入的是：{{inputValue}}</view>
