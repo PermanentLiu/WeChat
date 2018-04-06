@@ -24,6 +24,8 @@
         "text": "首页"
       },
       {
+        "iconPath": "src/time.png",
+        "selectedIconPath": "src/time1.png",
         "pagePath": "pages/logs/logs",
         "text": "日志"
       },
