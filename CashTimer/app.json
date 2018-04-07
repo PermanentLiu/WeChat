@@ -1,11 +1,40 @@
 {
   "pages":[
-    "pages/index/index"
+    "pages/timer/timer",
+    "pages/me/me",
+    "pages/friend/friend"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+
+  "tabBar": {
+    "color": "#00C467",
+    "selectedColor": "#35495e",
+    "borderStyle": "white",
+    "backgroundColor": "#f9f9f9",
+    "list": [
+      {
+        "text": "计时",
+        "pagePath": "pages/timer/timer"
+
+
+      },
+      {
+        "text": "目录",
+        "pagePath": "pages/me/me"
+
+
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/friend/friend"
+ 
+
+      }
+    ]
   }
 }
