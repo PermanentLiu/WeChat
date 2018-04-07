@@ -7,7 +7,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "CashTimer",
     "navigationBarTextStyle":"black"
   },
 
@@ -15,7 +15,7 @@
     "color": "black",
     "selectedColor": "#00C467",
     "borderStyle": "white",
-    "backgroundColor": "#f9f9f9",
+    "backgroundColor": "white",
     
     "list": [
       {

@@ -1,1 +1,7 @@
 /* pages/timer/timer.wxss */
+page{
+
+  height: 100%;
+  background-size: 100%;
+}
+
