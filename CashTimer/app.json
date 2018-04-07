@@ -6,7 +6,7 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#00F089",
     "navigationBarTitleText": "CashTimer",
     "navigationBarTextStyle":"black"
   },
