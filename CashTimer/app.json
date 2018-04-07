@@ -19,18 +19,24 @@
     
     "list": [
       {
-        "text": "我的",
-        "pagePath": "pages/me/me"
+        "text": "朋友",
+        "pagePath": "pages/friend/friend",
+        "iconPath": "images/friend-off.png",
+        "selectedIconPath": "images/friend.png"
       },
       {
         
         "text": "计时",
-        "pagePath": "pages/timer/timer"
-
+        "pagePath": "pages/timer/timer",
+        "iconPath": "images/timer-off.png",
+        "selectedIconPath": "images/timer.png"
       },
       {
-        "text": "朋友",
-        "pagePath": "pages/friend/friend"
+        "text": "我的",
+        "pagePath": "pages/me/me",
+        "iconPath": "images/me-off.png",
+        "selectedIconPath": "images/me.png"
+        
  
 
       }
