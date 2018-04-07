@@ -12,25 +12,24 @@
   },
 
   "tabBar": {
-    "color": "#00C467",
-    "selectedColor": "#35495e",
+    "color": "black",
+    "selectedColor": "#00C467",
     "borderStyle": "white",
     "backgroundColor": "#f9f9f9",
+    
     "list": [
       {
+        "text": "我的",
+        "pagePath": "pages/me/me"
+      },
+      {
+        
         "text": "计时",
         "pagePath": "pages/timer/timer"
 
-
       },
       {
-        "text": "目录",
-        "pagePath": "pages/me/me"
-
-
-      },
-      {
-        "text": "我的",
+        "text": "朋友",
         "pagePath": "pages/friend/friend"
  
 
