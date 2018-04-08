@@ -1,12 +1,28 @@
 <!--index.wxml-->
+<view>
+  <view>
+    <view> 
+    1
+    </view>
+ </view> 
+</view>
+
 <view class="container">
   <view class="userinfo">
-    <button class="registButton" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" > 微信注册 </button>
-    <button class="returnButton" bindtap="returnButtonOnClick" wx:if="{{!hasUserInfo && canIUse}}" >返回</button>
+    <button class="registButton" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" > 微信注册           </button>
+
+    
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-      <button class="continueButton" bindtap='continueButtonOnClick'> 继续 </button>
+      
     </block>
   </view>
+</view>
+<view>
+  <view>
+    <button class="returnButton" bindtap="returnButtonOnClick" wx:if="{{!hasUserInfo && canIUse}}" >返回</button>
+    <button class="continueButton" bindtap='continueButtonOnClick' wx:else> 继续 </button>
+  </view>
+  
 </view>

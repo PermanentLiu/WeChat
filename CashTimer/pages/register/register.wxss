@@ -1,7 +1,31 @@
 /**index.wxss**/
 page{
-  background-image: url('https://raw.githubusercontent.com/PermanentLiu/Wechat/master/images/money.png'); 
+  background-image: url('https://raw.githubusercontent.com/PermanentLiu/Wechat/master/images/money.png');   
   background-size: 100%; 
+}
+view{
+  display: flex;
+  justify-content: center
+}
+
+.registButton{
+  background-color: #2CB41B;
+  width: 500rpx;
+  height: 105rpx;
+  margin: 5%;
+  padding: 10px;
+  border-radius: 50px;
+  line-height: 60rpx;
+}
+
+.returnButton{
+  background-color: #F7ECDE;
+  width: 500rpx;
+  height: 105rpx;
+  margin: 5%;
+  padding: 10px;
+  border-radius: 50px;
+  line-height: 60rpx;
 }
 
 Button{
