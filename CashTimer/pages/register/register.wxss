@@ -4,15 +4,17 @@ page{
   background-size: 100%; 
 }
 
-button{
+Button{
   background-color: #F7ECDE;
-  width: 645rpx;
+  width: 500rpx;
   height: 105rpx;
   margin: 5%;
   padding: 10px;
   border-radius: 50px;
   line-height: 60rpx;
 }
+
+
 
 .userinfo {
   display: flex;

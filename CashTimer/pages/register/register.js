@@ -10,11 +10,11 @@ Page({
   },
 
   continueButtonOnClick : function(){
-    wx.redirectTo({url: '../me/me'})
+    wx.switchTab({ url: '../me/me' })
   },
 
   returnButtonOnClick : function(){
-    wx.redirectTo({url: '../timer/timer'})
+    wx.switchTab({ url: '../timer/timer' })
   },
   //事件处理函数
   onLoad: function () {
