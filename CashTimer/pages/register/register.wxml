@@ -1,11 +1,4 @@
 <!--index.wxml-->
-<view>
-  <view>
-    <view> 
-    1
-    </view>
- </view> 
-</view>
 
 <view class="container">
   <view class="userinfo">
