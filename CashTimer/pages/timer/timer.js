@@ -4,7 +4,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    src: "../../images/money-background.png",
     mode: "scaleToFill",
 
   },
