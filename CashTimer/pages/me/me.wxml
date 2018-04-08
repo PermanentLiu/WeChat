@@ -3,8 +3,9 @@
 
   <view class="user-logo">
     <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
-    <view class="nickname">{{userInfo.nickName}}</view>
   </view>
+  <view class="nickname">{{userInfo.nickName}}</view>
+  
 <!-- bindtap="maixiangMembertap"  -->
 
   <view catchtap="ifregister"   class="user-maixiangMember userstyle">

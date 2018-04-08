@@ -1,6 +1,6 @@
 /* pages/timer/timer.wxss */
 page{
-  /* background-image: url('https://raw.githubusercontent.com/PermanentLiu/Wechat/master/images/money.png');  */
+   background-image: url('https://github.com/PermanentLiu/Wechat/blob/master/images/1.png?raw=true');  
   background-size: 100%; 
 }
 
