@@ -6,16 +6,16 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#00F089",
+    "navigationBarBackgroundColor": "#CDCCCF",
     "navigationBarTitleText": "CashTimer",
     "navigationBarTextStyle":"black"
   },
 
   "tabBar": {
+    "backgroundColor": "#CDCCCF",
     "color": "black",
     "selectedColor": "#00C467",
     "borderStyle": "white",
-    "backgroundColor": "white",
     
     "list": [
       {
