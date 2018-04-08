@@ -2,8 +2,7 @@
 <view class="container">
 
   <view class="user-logo">
-    <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
-    <view class="nickname">{{userInfo.nickName}}</view>
+    <image class="user-logo-img" src="/images/McDonaldLogo.png"></image>
   </view>
 <!-- bindtap="maixiangMembertap"  -->
 
@@ -37,7 +36,11 @@
     <text class="righthead"></text>
   </view>
 
-  
+  <!-- 弹窗 -->
+  <modal title="温馨提示：" confirm-text="立即加入" cancel-text="以后再说"
+   hidden="{{modalHidden}}" bindconfirm="confirmChange" bindcancel="cancellChange" >
+  您还未注册麦享会会员,请先注册。
+  </modal>
 
 
 

@@ -29,7 +29,8 @@ Page({
       app.userInfoReadyCallback = res => {
         this.setData({
           userInfo: res.userInfo,
-          hasUserInfo: true
+          hasUserInfo: true ,
+         
         })
       }
     } else {
@@ -42,6 +43,10 @@ Page({
             hasUserInfo: true
           })
         }
+      })
+      wx.showToast({
+        title: '登陆成功',
+        duration: 1000,
       })
     }
   },

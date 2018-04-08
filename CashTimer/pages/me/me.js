@@ -6,7 +6,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    userInfo:{
+      avatarUrl:"",
+      nickName:"",
+    }
+  },
+
+  addAddress: function(){
+    wx.navigateTo({
+      url: 'addAddress/addAddress',
+    })
   },
 
   /**
@@ -16,6 +25,22 @@ Page({
     if(app.appData.userInfo == null){
       wx.redirectTo({url: '../register/register'})
     }
+
+    var that = this;
+
+    wx.getUserInfo({
+      success : function(res){
+        console.log(res);
+        var avatarUrl = "userInfo.avatarUrl";
+        var nickName = "userInfo.nickName";
+
+        that.setData({
+          
+          [avatarUrl]: res.userInfo.avatarUrl,
+          [nickName]: res.userInfo.nickName,
+        })
+      }
+    })
   },
 
   /**
