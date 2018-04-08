@@ -2,17 +2,18 @@
   "pages":[
     "pages/timer/timer",
     "pages/me/me",
-    "pages/friend/friend"
+    "pages/friend/friend",
+    "pages/register/register"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#CDCCCF",
+    "navigationBarBackgroundColor": "#F7ECDE",
     "navigationBarTitleText": "CashTimer",
     "navigationBarTextStyle":"black"
   },
 
   "tabBar": {
-    "backgroundColor": "#CDCCCF",
+    "backgroundColor": "#F7ECDE",
     "color": "black",
     "selectedColor": "#00C467",
     "borderStyle": "white",

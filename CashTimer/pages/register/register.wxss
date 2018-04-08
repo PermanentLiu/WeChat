@@ -1,0 +1,36 @@
+/**index.wxss**/
+page{
+  background-image: url('https://raw.githubusercontent.com/PermanentLiu/Wechat/master/images/money.png'); 
+  background-size: 100%; 
+}
+
+button{
+  background-color: #F7ECDE;
+  width: 645rpx;
+  height: 105rpx;
+  margin: 5%;
+  padding: 10px;
+  border-radius: 50px;
+  line-height: 60rpx;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
