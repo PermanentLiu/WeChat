@@ -38,12 +38,24 @@ Button{
   line-height: 60rpx;
 }
 
+.buttonView{
+  height: 400rpx;
 
+  display: flex;
+  justify-content: center; 
+  flex-direction: column;
+  align-items: center; 
+}
 
 .userinfo {
+  background-color: #fdf9dc;
+  background: #fdf9dc;
+  height: 800rpx;
+
   display: flex;
+  justify-content: center; 
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
 }
 
 .userinfo-avatar {
