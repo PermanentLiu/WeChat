@@ -10,7 +10,12 @@ page{
 .user-logo{
   background-color: #fdf9dc;
   background: #fdf9dc;
-  height: 300rpx;
+  height: 250rpx;
+
+  display: flex;
+  justify-content: center; 
+  flex-direction: column;
+  align-items: center; 
 }
 
 /* 共享view样式*/
@@ -67,11 +72,10 @@ page{
 .avatar{
   width: 150rpx;
   height: 150rpx;
-  border: 0 solid #F7ECDE;
-  border-radius: 150rpx;
+  border-width: 50 rpx 50rpx 50 rpx 50 rpx;
+  /* border: 0 solid #F7ECDE; */
+  border-radius: 150rpx; 
   background-color: #F7ECDE;
-  /* justify-content: center; */
-  flex-direction: column;
-  /* align-items: center; */
+  
 }
 
