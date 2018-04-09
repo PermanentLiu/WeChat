@@ -8,7 +8,9 @@ page{
    background: #F5F5F5;
 }
 .user-logo{
-   background: #fff;
+  background-color: #fdf9dc;
+  background: #fdf9dc;
+  height: 300rpx;
 }
 
 /* 共享view样式*/
@@ -63,10 +65,10 @@ page{
 }
 
 .avatar{
-  width: 250rpx;
-  height: 250rpx;
+  width: 150rpx;
+  height: 150rpx;
   border: 0 solid #F7ECDE;
-  border-radius: 250rpx;
+  border-radius: 150rpx;
   background-color: #F7ECDE;
   /* justify-content: center; */
   flex-direction: column;
