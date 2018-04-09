@@ -22,6 +22,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log("ONLOAD")
+
     if(app.appData.userInfo == null){
       wx.redirectTo({url: '../register/register'})
     }
@@ -39,8 +41,15 @@ Page({
           [avatarUrl]: res.userInfo.avatarUrl,
           [nickName]: res.userInfo.nickName,
         })
+
+        wx.setNavigationBarTitle({
+          title: res.userInfo.nickName,
+        })
       }
     })
+
+    
+
   },
 
   /**

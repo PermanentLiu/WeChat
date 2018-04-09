@@ -4,7 +4,6 @@
   <view class="user-logo">
     <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
   </view>
-  <view class="nickname">{{userInfo.nickName}}</view>
   
 <!-- bindtap="maixiangMembertap"  -->
 
