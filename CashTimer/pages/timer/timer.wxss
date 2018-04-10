@@ -1,13 +1,15 @@
 /* pages/timer/timer.wxss */
 page{
-   height: 100%
+   height: 100%;
+   width: 100%;
 }
 
 .container {
   background-image: url('https://raw.githubusercontent.com/PermanentLiu/Wechat/master/images/money.png');   
-   background-size: 100%;  
+  background-size: 100%;   
   display: flex;
-    height: 100%;   
+  /* height: 100%;    */
+  /* width: 100%; */
   flex-direction: column;
   overflow: hidden; 
   /* background-color: #fdf9dc;  */
@@ -19,8 +21,8 @@ page{
   flex: 2;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 120px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   /* height: 500 rpx; */
   text-align: center;
   /* background-color: #fdf9dc; */
@@ -54,7 +56,7 @@ page{
   left: 0;
   bottom: 0;
   right: 0;
-  border: 3px solid #18C972;
+  border: 3px solid #fdf9dc;
   opacity: .5;
   border-radius: 50%;
 }
@@ -129,7 +131,7 @@ page{
   justify-content: center;
   align-items: center;
   flex: 1;
-  padding-top: 40px;
+  padding-top: 20px;
   transition: all .3s;
 }
 
