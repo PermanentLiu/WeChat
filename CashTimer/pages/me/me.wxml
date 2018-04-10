@@ -8,32 +8,32 @@
 <!-- bindtap="maixiangMembertap"  -->
 
   <view catchtap="ifregister"   class="user-maixiangMember userstyle">
-    <text class="userTextStyle">麦享会会员信息</text>
+    <text class="userTextStyle">积分记录</text>
     <text class="righthead"></text>
   </view>
 
   <view class="user-tongleMember userstyle">
-    <text class="userTextStyle">童乐会会员信息</text>
+    <text class="userTextStyle">个人设置</text>
     <text class="righthead"></text>
   </view>
 
   <view class="user-commonProblem userstyle">
-    <text class="userTextStyle">常见问题</text>
-    <text class="righthead"></text>
-  </view>
-
-  <view class="user-ontegralRule userstyle">
     <text class="userTextStyle">积分规则</text>
     <text class="righthead"></text>
   </view>
 
+  <view class="user-ontegralRule userstyle">
+    <text class="userTextStyle">使用教程</text>
+    <text class="righthead"></text>
+  </view>
+
   <view class="user-termsOfUse userstyle">
-    <text class="userTextStyle">使用条款</text>
+    <text class="userTextStyle">提交反馈</text>
     <text class="righthead"></text>
   </view>
 
   <view class="user-privacyPolicy userstyle">
-    <text class="userTextStyle">隐私权政策</text>
+    <text class="userTextStyle">关于我们</text>
     <text class="righthead"></text>
   </view>
 
