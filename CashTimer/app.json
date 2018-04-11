@@ -3,7 +3,8 @@
     "pages/timer/timer",
     "pages/me/me",
     "pages/friend/friend",
-    "pages/register/register"
+    "pages/register/register",
+    "pages/setting/setting"
   ],
   "window":{
     "backgroundTextStyle":"light",

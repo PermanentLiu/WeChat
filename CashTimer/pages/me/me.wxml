@@ -12,7 +12,7 @@
     <text class="righthead"></text>
   </view>
 
-  <view class="user-tongleMember userstyle">
+  <view class="user-tongleMember userstyle" bindtap='setting'>
     <text class="userTextStyle">个人设置</text>
     <text class="righthead"></text>
   </view>

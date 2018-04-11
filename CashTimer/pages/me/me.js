@@ -12,6 +12,12 @@ Page({
     }
   },
 
+  setting: function(){
+    wx.navigateTo({
+      url: '../setting/setting',
+    })
+  },
+
   addAddress: function(){
     wx.navigateTo({
       url: 'addAddress/addAddress',
