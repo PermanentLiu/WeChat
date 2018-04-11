@@ -12,6 +12,12 @@ Page({
     }
   },
 
+  record:function(){
+    wx.navigateTo({
+      url: '../record/record',
+    })
+  },
+
   setting: function(){
     wx.navigateTo({
       url: '../setting/setting',

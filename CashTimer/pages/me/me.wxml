@@ -7,7 +7,7 @@
   
 <!-- bindtap="maixiangMembertap"  -->
 
-  <view catchtap="ifregister"   class="user-maixiangMember userstyle">
+  <view class="user-maixiangMember userstyle" bindtap='record'>
     <text class="userTextStyle">积分记录</text>
     <text class="righthead"></text>
   </view>
