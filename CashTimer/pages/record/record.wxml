@@ -19,7 +19,7 @@
 		hidden="{{modalHidden}}" 
 		bindconfirm="clearLog" 
 		bindcancel="switchModal">
-	    是否清除记录？此操作不可恢复!·
+	    是否清除记录？此操作不可恢复!
 	</modal>
 </block>
 <block wx:else>
