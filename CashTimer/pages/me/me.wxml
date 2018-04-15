@@ -32,7 +32,7 @@
     <text class="righthead"></text>
   </view>
 
-  <view class="user-privacyPolicy userstyle">
+  <view class="user-privacyPolicy userstyle" bindtap='aboutus'>
     <text class="userTextStyle">关于我们</text>
     <text class="righthead"></text>
   </view>
