@@ -12,6 +12,12 @@ Page({
     }
   },
 
+  aboutus: function(){
+    wx.navigateTo({
+      url: '../aboutus/aboutus',
+    })
+  },
+
   record:function(){
     wx.navigateTo({
       url: '../record/record',
