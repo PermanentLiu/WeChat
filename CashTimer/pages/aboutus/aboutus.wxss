@@ -1,5 +1,5 @@
 
 page{
-   background-image: url('https://github.com/PermanentLiu/Wechat/blob/master/images/aboutus(1).png');    
+   background-image: url('https://raw.githubusercontent.com/PermanentLiu/Wechat/master/images/aboutus(1).png');    
   background-size: 100%; 
 }
