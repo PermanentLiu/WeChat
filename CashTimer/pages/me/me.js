@@ -30,15 +30,27 @@ Page({
     })
   },
 
+
+  tutorial: function () {
+    wx.navigateTo({ url: '../tutorial/tutorial' })
+  },
+
+  rule: function () {
+    wx.navigateTo({ url: '../rule/rule' })
+  },
+
+
+  feedback: function () {
+    wx.navigateTo({ url: '../feedback/feedback' })
+  },
+
   addAddress: function(){
     wx.navigateTo({
       url: 'addAddress/addAddress',
     })
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
+
   onLoad: function (options) {
     console.log("ONLOAD")
 

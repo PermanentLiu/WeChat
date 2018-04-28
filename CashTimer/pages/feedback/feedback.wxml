@@ -1,0 +1,6 @@
+<view class="content">
+<textarea placeholder="请输入想对我们说的话吧！~" style="width:250px;height:250px"/>
+</view>
+<view>
+<button  form-type="submit"  size="{{submitSize}}" style="height:50px;width:350px;border-radius: 50px;background-color:#18C972;"> 提交 </button>
+</view>

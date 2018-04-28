@@ -9,7 +9,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.94",
-	"appid": "wx8da847a6ad4a0088",
+	"appid": "touristappid",
 	"projectname": "CashTimer",
 	"isGameTourist": false,
 	"condition": {

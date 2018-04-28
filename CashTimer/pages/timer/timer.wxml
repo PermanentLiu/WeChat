@@ -30,11 +30,6 @@
 	  	bindtap="startTimer" 
 	  	data-type="work" 
 	  	class="timer_ctrl {{isRuning && timerType == 'rest' ? 'hide' : ''}}" >{{isRuning ? '完成': '工作'}}</view>
-
-	  <view 
-	  	bindtap="startTimer" 
-	  	data-type="rest" 
-	  	class="timer_ctrl {{isRuning && timerType == 'work' ? 'hide' : ''}}" >{{isRuning ? '完成': '休息'}}</view>
 	</view>
 </view>
 

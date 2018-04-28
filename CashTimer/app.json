@@ -3,10 +3,12 @@
     "pages/timer/timer",
     "pages/me/me",
     "pages/friend/friend",
-    "pages/register/register",
     "pages/setting/setting",
     "pages/record/record",
-    "pages/aboutus/aboutus"
+    "pages/aboutus/aboutus",
+    "pages/feedback/feedback",
+    "pages/rule/rule",
+    "pages/tutorial/tutorial"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -40,9 +42,6 @@
         "pagePath": "pages/me/me",
         "iconPath": "images/me-off.png",
         "selectedIconPath": "images/me.png"
-        
- 
-
       }
     ]
   }

@@ -17,17 +17,17 @@
     <text class="righthead"></text>
   </view>
 
-  <view class="user-commonProblem userstyle">
+  <view class="user-commonProblem userstyle" bindtap="rule">
     <text class="userTextStyle">积分规则</text>
     <text class="righthead"></text>
   </view>
 
-  <view class="user-ontegralRule userstyle">
+  <view class="user-ontegralRule userstyle" bindtap="tutorial">
     <text class="userTextStyle">使用教程</text>
     <text class="righthead"></text>
   </view>
 
-  <view class="user-termsOfUse userstyle">
+  <view class="user-termsOfUse userstyle" bindtap="feedback">
     <text class="userTextStyle">提交反馈</text>
     <text class="righthead"></text>
   </view>
