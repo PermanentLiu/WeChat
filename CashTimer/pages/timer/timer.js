@@ -27,10 +27,10 @@ Page({
   onShow: function () {
     if (this.data.isRuning) return
     let workTime = util.formatTime(wx.getStorageSync('workTime'), 'HH')
-    let restTime = util.formatTime(wx.getStorageSync('restTime'), 'HH')
+    //let restTime = util.formatTime(wx.getStorageSync('restTime'), 'HH')
     this.setData({
       workTime: workTime,
-      restTime: restTime,
+      //restTime: restTime,
       remainTimeText: workTime + ':00'
     })
   },
