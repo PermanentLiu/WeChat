@@ -1,0 +1,15 @@
+<!--pages/user/user.wxml-->
+<view class="container">
+
+<!-- bindtap="maixiangMembertap"  -->
+
+  <view class="user-maixiangMember userstyle" wx:for="{{usersInfo}}">
+      <text class="userTextStyle">{{item.name}}</text>
+      <text class="righthead">{{item.score}}</text>
+  </view>
+
+
+
+
+
+</view>

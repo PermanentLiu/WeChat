@@ -4,7 +4,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    userInfo: {
+      nickName: "",
+    },
+    usersInfo:null,
   },
 
   /**
@@ -25,6 +28,8 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    var thispage = this;
+
     wx.request({
       url: 'http://111.230.56.68:11112', //仅为示例，并非真实的接口地址
       data: {
@@ -36,8 +41,16 @@ Page({
       },
       success: function (res) {
         console.log(res.data)
+
+        var usersInfo = "usersInfo";
+
+        thispage.setData({
+          [usersInfo]: res.data,
+        })   
       }
     })
+
+  
   },
 
   /**
