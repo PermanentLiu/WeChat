@@ -14,6 +14,19 @@ Page({
 
     //新建用户信息
     console.log(app.appData.userInfo.nickName)
+    wx.request({
+      url: 'http://111.230.56.68:11111/user?name=' + app.appData.userInfo.nickName, //仅为示例，并非真实的接口地址
+      data: {
+        x: '',
+        y: ''
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        console.log(res.data)
+      }
+    })
 
     wx.showToast({
       title: '登陆成功',
