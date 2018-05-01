@@ -1,11 +1,10 @@
 Page({
   onShow: function () {
     wx.setNavigationBarTitle({
-      title: '设置'
+      title: '个人设置'
     })
     this.setData({
       workTime: wx.getStorageSync('workTime'),
-      restTime: wx.getStorageSync('restTime')
     })
   },
   changeWorkTime: function (e) {

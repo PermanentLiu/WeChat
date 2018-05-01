@@ -11,6 +11,14 @@ Page({
 
   continueButtonOnClick : function(){
     wx.switchTab({ url: '../me/me' })
+
+    //新建用户信息
+    console.log(app.appData.userInfo.nickName)
+
+    wx.showToast({
+      title: '登陆成功',
+      duration: 1000,
+    })
   },
 
   returnButtonOnClick : function(){
@@ -23,7 +31,8 @@ Page({
         userInfo: app.appData.userInfo,
         hasUserInfo: true
       })
-    } else if (this.data.canIUse) {
+    } 
+    else if (this.data.canIUse) {
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {
@@ -33,7 +42,8 @@ Page({
          
         })
       }
-    } else {
+    } 
+    else {
       // 在没有 open-type=getUserInfo 版本的兼容处理
       wx.getUserInfo({
         success: res => {
@@ -44,11 +54,10 @@ Page({
           })
         }
       })
-      wx.showToast({
-        title: '登陆成功',
-        duration: 1000,
-      })
+      
+      
     }
+   
   },
   getUserInfo: function (e) {
     console.log(e)
