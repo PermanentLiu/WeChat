@@ -8,6 +8,7 @@
     "pages/aboutus/aboutus",
     "pages/feedback/feedback",
     "pages/rule/rule",
+    "pages/register/register",
     "pages/tutorial/tutorial"
   ],
   "window":{

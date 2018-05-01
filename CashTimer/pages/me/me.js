@@ -30,7 +30,6 @@ Page({
     })
   },
 
-
   tutorial: function () {
     wx.navigateTo({ url: '../tutorial/tutorial' })
   },
@@ -53,33 +52,6 @@ Page({
 
   onLoad: function (options) {
     console.log("ONLOAD")
-
-    if(app.appData.userInfo == null){
-      wx.redirectTo({url: '../register/register'})
-    }
-
-    var that = this;
-
-    wx.getUserInfo({
-      success : function(res){
-        console.log(res);
-        var avatarUrl = "userInfo.avatarUrl";
-        var nickName = "userInfo.nickName";
-
-        that.setData({
-          
-          [avatarUrl]: res.userInfo.avatarUrl,
-          [nickName]: res.userInfo.nickName,
-        })
-
-        wx.setNavigationBarTitle({
-          title: res.userInfo.nickName,
-        })
-      }
-    })
-
-    
-
   },
 
   /**
@@ -93,6 +65,29 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    if (app.appData.userInfo == null) {
+      wx.redirectTo({ url: '../register/register' })
+    }
+
+    var that = this;
+
+    wx.getUserInfo({
+      success: function (res) {
+        console.log(res);
+        var avatarUrl = "userInfo.avatarUrl";
+        var nickName = "userInfo.nickName";
+
+        that.setData({
+
+          [avatarUrl]: res.userInfo.avatarUrl,
+          [nickName]: res.userInfo.nickName,
+        })
+
+        wx.setNavigationBarTitle({
+          title: res.userInfo.nickName,
+        })
+      }
+    })
     
   },
 
