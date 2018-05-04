@@ -1,4 +1,5 @@
 const util = require('../../utils/util.js')
+const app = getApp()
 const defaultLogName = {
   work: '工作',
 }
@@ -15,6 +16,7 @@ const initDeg = {
 Page({
 
   data: {
+   
     remainTimeText: '',
     timerType: 'work',
     log: {},
@@ -25,6 +27,8 @@ Page({
   },
 
   onShow: function () {
+    
+
     if (this.data.isRuning) return
     let workTime = util.formatTime(wx.getStorageSync('workTime'), 'HH')
     this.setData({
@@ -107,10 +111,31 @@ Page({
       this.setData({
         remainTimeText: remainTimeText
       })
-    } else if (remainingTime == 0) {
-      this.setData({
+    } 
+    else if 
+    (remainingTime == 0) 
+    {
+      this.setData
+      ({
         completed: true
       })
+      //upload score
+      var score = wx.getStorageSync('workTime')
+      console.log("upload score")
+      wx.request({
+        url: 'http://111.230.56.68:11113/user?name=' + app.appData.userInfo.nickName +'&score='+score, //仅为示例，并非真实的接口地址
+        data: {
+          x: '',
+          y: ''
+        },
+        header: {
+          'content-type': 'application/json' // 默认值
+        },
+        success: function (res) {
+          console.log(res.data)
+        }
+      })
+
       this.stopTimer()
       return
     }
