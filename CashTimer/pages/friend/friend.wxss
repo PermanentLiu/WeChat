@@ -21,7 +21,7 @@ page{
 /* 共享view样式*/
 .userstyle {
   padding: 25rpx 40rpx;
-  background: #fff;
+  background: #fdf9dc;
   border-width: 0rpx 0rpx 1rpx 0rpx;
   border-style: solid;
   border-color: #F5F5F5;

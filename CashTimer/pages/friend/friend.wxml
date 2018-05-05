@@ -3,7 +3,7 @@
 
 <!-- bindtap="maixiangMembertap"  -->
 
-  <view class="user-maixiangMember userstyle" wx:for="{{usersInfo}}">
+  <view class="user-maixiangMember userstyle" wx:for="{{usersInfo}}" wx:key="item">
       <text class="userTextStyle">{{item.name}}</text>
       <text class="righthead">{{item.score}}</text>
   </view>
