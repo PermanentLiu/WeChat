@@ -30,6 +30,27 @@ Page({
     })
   },
 
+  exitting: function(){
+    //https://server4.permanentliu.cn/user?name=刘永蘅Permanent%20Liu
+    wx.showModal({
+      title: '',
+      content: '您真的要退出登陆吗',
+      success: function (res) {
+        if (res.confirm) {
+          wx.request({
+            url: 'https://server4.permanentliu.cn/user?name=' + app.appData.userInfo.nickName,
+          })
+          app.appData.userInfo = null;
+          app.appData.workTime = 25;
+          wx.switchTab({ url: '../timer/timer' })
+        } else {
+          console.log('用户点击取消')
+        }
+
+      }
+    })
+  },
+
   tutorial: function () {
     wx.navigateTo({ url: '../tutorial/tutorial' })
   },

@@ -37,6 +37,11 @@
     <text class="righthead"></text>
   </view>
 
+  <view class="user-maixiangMember userstyle" bindtap='exitting'>
+    <text class="userTextStyle">退出登录</text>
+    <text class="righthead"></text>
+  </view>
+
   
 
 

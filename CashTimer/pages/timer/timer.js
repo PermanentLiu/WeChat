@@ -123,7 +123,7 @@ Page({
       var score = wx.getStorageSync('workTime')
       console.log("upload score")
       wx.request({
-        url: 'https://server3.permanentliu.cn/user?name=' + app.appData.userInfo.nickName +'&score='+score, //仅为示例，并非真实的接口地址
+        url: 'https://server3.permanentliu.cn/user?name=' + app.appData.userInfo.nickName +'&score='+score,
         data: {
           x: '',
           y: ''
