@@ -1,15 +1,10 @@
-<!--pages/user/user.wxml-->
-<view class="container">
 
-<!-- bindtap="maixiangMembertap"  -->
 
-  <view class="user-maixiangMember userstyle" wx:for="{{usersInfo}}" wx:key="item">
+<scroll-view class="container" scroll-y="true">
+  <view class="scroll-y" >
+    <view class="user-maixiangMember userstyle" wx:for="{{usersInfo}}" wx:key="item">
       <text class="userTextStyle">{{item.name}}</text>
       <text class="righthead" >{{item.score}}</text>
   </view>
-
-
-
-
-
-</view>
+  </view>
+</scroll-view>
