@@ -5,7 +5,7 @@ page{
 
 .container{
    height: 100%;
-   background: #F5F5F5;
+   background: #fdf9dc;
 }
 .user-logo{
   background-color: #fdf9dc;
@@ -21,10 +21,10 @@ page{
 /* 共享view样式*/
 .userstyle {
   padding: 25rpx 40rpx;
-  background: #fdf9dc;
+  background: #EDE9CE;
   border-width: 0rpx 0rpx 1rpx 0rpx;
   border-style: solid;
-  border-color: #F5F5F5;
+  border-color: #fdf9dc;
   display: flex;
   align-items: center;
 
@@ -49,14 +49,13 @@ page{
   border-left: none;
   transform: rotate(45deg);
   margin-top: -8rpx;
-
 }
 
 
 .user-maixiangMember {
   border-width: 17rpx 0rpx 10rpx 0rpx;
   border-style: solid;
-  border-color: #EFEFF5;
+  border-color: #fdf9dc;
   display: flex;
   align-items: center;
 }

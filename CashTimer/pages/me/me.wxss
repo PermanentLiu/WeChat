@@ -5,7 +5,7 @@ page{
 
 .container{
    height: 100%;
-   background: #F5F5F5;
+   background: #EFEFF5;
 }
 .user-logo{
   background-color: #fdf9dc;
