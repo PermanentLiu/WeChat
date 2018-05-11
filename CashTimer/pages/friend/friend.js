@@ -46,6 +46,8 @@ Page({
         thispage.setData({
           [usersInfo]: res.data,
         })   
+
+        console.log(usersInfo)
       }
     })
 

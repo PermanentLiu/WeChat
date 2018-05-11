@@ -23,17 +23,42 @@ Page({
     completed: false,
     isRuning: false,
     leftDeg: initDeg.left,
-    rightDeg: initDeg.right
+    rightDeg: initDeg.right,
+    oldScore: 0,
   },
 
   onShow: function () {
-    
+    var thispage = this;
 
     if (this.data.isRuning) return
     let workTime = util.formatTime(wx.getStorageSync('workTime'), 'HH')
     this.setData({
       workTime: workTime,
       remainTimeText: workTime + ':00'
+    })
+
+    wx.request({
+      url: 'https://server.permanentliu.cn/user?name=' + app.appData.userInfo.nickName,
+      data: {
+        x: '',
+        y: ''
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        console.log(res.data)
+        console.log(res.data[1])
+
+        //var obj = eval("(" + res.data + ")");
+        var oldScore = 'oldScore';
+
+        thispage.setData({
+          [oldScore]: res.data[1],
+        })
+
+        console.log("oldScore:" + oldScore);
+      }
     })
   },
 
@@ -122,6 +147,8 @@ Page({
       //upload score
       var score = wx.getStorageSync('workTime')
       console.log("upload score")
+      
+
       wx.request({
         url: 'https://server3.permanentliu.cn/user?name=' + app.appData.userInfo.nickName +'&score='+score,
         data: {
