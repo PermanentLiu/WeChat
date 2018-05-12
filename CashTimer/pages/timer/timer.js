@@ -48,21 +48,21 @@ Page({
       },
       success: function (res) {
         console.log(res.data)
-        console.log(res.data[1])
 
-        //var obj = eval("(" + res.data + ")");
         var oldScore = 'oldScore';
 
         thispage.setData({
-          [oldScore]: res.data[1],
+          [oldScore]: res.data[0],
         })
-
-        console.log("oldScore:" + oldScore);
       }
     })
+
+    
   },
 
   startTimer: function (e) {
+    console.log("oldScore:" + this.data.oldScore)
+
     let startTime = Date.now()
     let isRuning = this.data.isRuning
     let timerType = e.target.dataset.type
@@ -146,11 +146,12 @@ Page({
       })
       //upload score
       var score = wx.getStorageSync('workTime')
+      var uploadScore = score * 2 + this.data.oldScore;
       console.log("upload score")
       
 
       wx.request({
-        url: 'https://server3.permanentliu.cn/user?name=' + app.appData.userInfo.nickName +'&score='+score,
+        url: 'https://server3.permanentliu.cn/user?name=' + app.appData.userInfo.nickName +'&score='+uploadScore,
         data: {
           x: '',
           y: ''
