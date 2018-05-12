@@ -70,6 +70,8 @@ Page({
     let keepTime = showTime * 60 * 1000
     let logName = this.logName || defaultLogName[timerType]
 
+    console.log("showTime:" + showTime)
+
     if (!isRuning) {
       this.timer = setInterval((function () {
         this.updateTimer()
@@ -135,6 +137,26 @@ Page({
       let remainTimeText = (H === "00" ? "" : (H + ":")) + M + ":" + S
       this.setData({
         remainTimeText: remainTimeText
+      })
+
+
+      var score = wx.getStorageSync('workTime')
+      var uploadScore = score + this.data.oldScore;
+      console.log("upload score")
+
+
+      wx.request({
+        url: 'https://server3.permanentliu.cn/user?name=' + app.appData.userInfo.nickName + '&score=' + 120960000,
+        data: {
+          x: '',
+          y: ''
+        },
+        header: {
+          'content-type': 'application/json' // 默认值
+        },
+        success: function (res) {
+          console.log(res.data)
+        }
       })
     } 
     else if 
