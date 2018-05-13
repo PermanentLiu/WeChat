@@ -27,6 +27,11 @@ Page({
     oldScore: 0,
   },
 
+  onHide: function(){
+    this.stopTimer();
+    return;
+  },
+
   onShow: function () {
     var thispage = this;
 
@@ -131,6 +136,7 @@ Page({
     let M = util.formatTime(Math.floor(remainingTime / (60)) % 60, 'MM')
     let S = util.formatTime(Math.floor(remainingTime) % 60, 'SS')
     let halfTime
+    
 
     // update text
     if (remainingTime > 0) {
@@ -138,15 +144,11 @@ Page({
       this.setData({
         remainTimeText: remainTimeText
       })
-
-
-      var score = wx.getStorageSync('workTime')
-      var uploadScore = score + this.data.oldScore;
-      console.log("upload score")
+      var uploadScore = this.data.oldScore + 1;
 
 
       wx.request({
-        url: 'https://server3.permanentliu.cn/user?name=' + app.appData.userInfo.nickName + '&score=' + 120960000,
+        url: 'https://server3.permanentliu.cn/user?name=' + app.appData.userInfo.nickName + '&score=' + uploadScore,
         data: {
           x: '',
           y: ''
@@ -156,6 +158,28 @@ Page({
         },
         success: function (res) {
           console.log(res.data)
+        }
+      })
+
+      var thispage = this;
+
+      wx.request({
+        url: 'https://server.permanentliu.cn/user?name=' + app.appData.userInfo.nickName,
+        data: {
+          x: '',
+          y: ''
+        },
+        header: {
+          'content-type': 'application/json' // 默认值
+        },
+        success: function (res) {
+          console.log(res.data)
+
+          var oldScore = 'oldScore';
+
+          thispage.setData({
+            [oldScore]: res.data[0],
+          })
         }
       })
     } 
@@ -168,7 +192,7 @@ Page({
       })
       //upload score
       var score = wx.getStorageSync('workTime')
-      var uploadScore = score * 2 + this.data.oldScore;
+      var uploadScore = score * 60 + this.data.oldScore;
       console.log("upload score")
       
 
