@@ -2,7 +2,7 @@
 
 
 <view class="userinfo">
-  <button class="registButton" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" > 微信登陆                       </button>
+  <button class="registButton" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" > 确认登陆                       </button>
 
     
     <block wx:else>
