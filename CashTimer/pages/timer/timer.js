@@ -28,14 +28,18 @@ Page({
   },
 
   onHide: function(){
-    this.stopTimer();
+    
     return;
   },
 
   onShow: function () {
+    
     var thispage = this;
 
-    if (this.data.isRuning) return
+    if (this.data.isRuning) {
+      console.log("Still running")
+      return
+    }
     let workTime = util.formatTime(wx.getStorageSync('workTime'), 'HH')
     this.setData({
       workTime: workTime,
