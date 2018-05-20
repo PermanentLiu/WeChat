@@ -38,8 +38,11 @@ Page({
 
     if (this.data.isRuning) {
       console.log("Still running")
-      this.setData({
-        isRunning : false,
+
+      var isRunning = 'isRunning';
+
+      thispage.setData({
+        [isRunning]: false,
       })
       onShow();
       return
