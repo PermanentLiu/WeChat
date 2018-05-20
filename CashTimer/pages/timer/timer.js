@@ -38,6 +38,10 @@ Page({
 
     if (this.data.isRuning) {
       console.log("Still running")
+      this.setData({
+        isRunning : false,
+      })
+      onShow();
       return
     }
     let workTime = util.formatTime(wx.getStorageSync('workTime'), 'HH')
