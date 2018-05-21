@@ -27,10 +27,7 @@ Page({
     oldScore: 0,
   },
 
-  onHide: function(){
-    
-    return;
-  },
+
 
   onShow: function () {
     
