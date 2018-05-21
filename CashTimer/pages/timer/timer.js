@@ -33,13 +33,15 @@ Page({
     
     var thispage = this;
 
-    // if (this.data.isRuning) {
-    //   var isRunning = 'isRunning';
-
-    //   thispage.setData({
-    //     [isRunning]: false,
-    //   })
+    if (this.data.isRuning) {
       this.stopTimer()
+
+      var isRunning = 'isRunning';
+
+      thispage.setData({
+        [isRunning]: false,
+      })
+     
       console.log("Still running")  
       // thispage.onShow()
       return
