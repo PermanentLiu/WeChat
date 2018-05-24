@@ -1,0 +1,7 @@
+page
+{
+  width: 95%;
+  height: 100%;
+  margin-right:2;
+  background-color:#f9f7e7;
+}

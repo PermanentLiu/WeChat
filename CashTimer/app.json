@@ -26,10 +26,10 @@
     
     "list": [
       {
-        "text": "朋友",
+        "text": "排行",
         "pagePath": "pages/friend/friend",
-        "iconPath": "images/friend-off.png",
-        "selectedIconPath": "images/friend.png"
+        "iconPath": "images/ranking-off.png",
+        "selectedIconPath": "images/ranking.png"
       },
       {
         

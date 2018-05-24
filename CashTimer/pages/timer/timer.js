@@ -28,23 +28,41 @@ Page({
   },
 
 
+onHide: function (){
+  var thispage = this;
+
+  if (this.data.isRuning) {
+    this.stopTimer()
+
+    var isRuning = 'isRuning';
+
+    thispage.setData({
+      [isRuning]: false,
+    })
+
+
+    console.log("Still running")
+    // thispage.onShow()
+
+  }
+},
 
   onShow: function () {
-    
     var thispage = this;
 
     if (this.data.isRuning) {
       this.stopTimer()
 
-      var isRunning = 'isRunning';
+      var isRuning = 'isRuning';
 
       thispage.setData({
-        [isRunning]: false,
+        [isRuning]: false,
       })
+    
      
       console.log("Still running")  
       // thispage.onShow()
-      return
+      
     }
     let workTime = util.formatTime(wx.getStorageSync('workTime'), 'HH')
     this.setData({
@@ -92,7 +110,8 @@ Page({
         this.updateTimer()
         this.startNameAnimation()
       }).bind(this), 1000)
-    } else {
+    }
+     else {
       this.stopTimer()
     }
 

@@ -1,10 +1,22 @@
-  
-        <text class="page__desc">1.打开CashTime后 ，界面如下，选择【我的】进行微信授权登陆。如不登陆将按默认时间进行计时，且不记录到积分当中。\n\n</text>  
-       
-        <text class="page__desc2">2.进入个人页面后，可在【个人设置】里更改计时间，拖动滑动选择器即可更改。\n\n</text>  
-       
-        <text class="page__desc3">3.设置好时间后，返回计时页面，选择【工作】或【休息】，即开始计时。可在框内输入这段时间要完成的事，点击完成退出计时。\n\n</text>  
-        
-        <text class="page__desc4">4.事件完成后，可在【我的】-【积分记录】查看积分获取明细。\n\n</text>  
-        
-        <text class="page__desc5">5.点击【朋友】界面，查看当前好友排名。\n\n</text>  
+<view class="page">
+    <view class="page__desc">
+        <text>1.打开CashTime后 ，界面如下，选择【我的】进行微信授权登陆。如不登陆将按默认时间进行计时，且不记录到积分当中。</text>  
+        <image src="https://github.com/PermanentLiu/Wechat/blob/master/images/me.jpg?raw=true" mode="aspectFit"></image>  
+    </view>  
+    <view class="page__desc2">
+        <text >2.进入个人页面后，可在【个人设置】里更改计时间，拖动滑动选择器即可更改。\n\n</text>  
+        <image src="https://github.com/PermanentLiu/Wechat/blob/master/images/set.png?raw=true" mode="aspectFit"></image>  
+    </view>
+    <view class="page__desc3">
+        <text>3.设置好时间后，返回计时页面，点击【工作】按钮，即开始计时。可在框内输入这段时间要完成的事，点击完成退出计时。</text>  
+        <image src="https://github.com/PermanentLiu/Wechat/blob/master/images/work.png?raw=true" mode="aspectFit"></image>  
+    </view>
+    <view class="page__desc4">
+        <text>4.事件完成后，可在【我的】-【积分记录】查看积分获取明细。</text>  
+        <image src="https://github.com/PermanentLiu/Wechat/blob/master/images/jilu.png?raw=true" mode="aspectFit"></image>  
+    </view>
+    <view class="page__desc5">
+        <text >5.点击【排行】界面，查看当前排名。</text>  
+        <image src="https://github.com/PermanentLiu/Wechat/blob/master/images/ranking.png?raw=true" mode="aspectFit"></image>
+    </view>
+</view>
