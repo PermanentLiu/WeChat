@@ -72,10 +72,7 @@ onHide: function (){
 
     wx.request({
       url: 'https://server.permanentliu.cn/user?name=' + app.appData.userInfo.nickName,
-      data: {
-        x: '',
-        y: ''
-      },
+
       header: {
         'content-type': 'application/json' // 默认值
       },
