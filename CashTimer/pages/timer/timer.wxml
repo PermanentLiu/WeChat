@@ -16,7 +16,7 @@
 		 		<image 
 		 			wx:if="{{completed}}" 
 		 			class="timer_done" 
-		 			src="../../image/complete.png"></image>
+		 			src="../../images/complete.png"></image>
         <input 
           type="text" 
           placeholder-style="text-align:center" 
