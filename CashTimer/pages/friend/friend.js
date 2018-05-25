@@ -52,6 +52,8 @@ Page({
       }
     })
 
+    console.log("nickname: " + app.appData.userInfo.nickName)
+
     wx.request({
       url: 'https://server.permanentliu.cn/user?name=' + app.appData.userInfo.nickName,
       header: {
