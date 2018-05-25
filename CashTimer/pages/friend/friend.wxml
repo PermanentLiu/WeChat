@@ -1,10 +1,16 @@
 
-
 <scroll-view class="container" scroll-y="true">
   <view class="scroll-y" >
-    <view class="user-maixiangMember userstyle" wx:for="{{usersInfo}}" wx:key="item">
+    <view class="users friendstyle" wx:for="{{usersInfo}}" wx:key="item">
       <text class="userTextStyle">{{item.name}}</text>
       <text class="righthead" >{{item.score}}</text>
   </view>
   </view>
 </scroll-view>
+
+  <view class = "title">
+    <view class="users userstyle">
+      <text class="userTextStyle">您的排名</text>
+      <text class="righthead">{{ranking}}</text>
+    </view>
+  </view>

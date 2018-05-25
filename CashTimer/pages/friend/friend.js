@@ -1,3 +1,5 @@
+const app = getApp()
+
 Page({
 
   /**
@@ -8,6 +10,7 @@ Page({
       nickName: "",
     },
     usersInfo:null,
+    ranking:0,
   },
 
   /**
@@ -46,6 +49,28 @@ Page({
         thispage.setData({
           [usersInfo]: res.data,
         })   
+      }
+    })
+
+    wx.request({
+      url: 'https://server.permanentliu.cn/user?name=' + app.appData.userInfo.nickName,
+      data: {
+        x: '',
+        y: ''
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        console.log(res.data)
+
+        var ranking = 'ranking';
+
+        thispage.setData({
+          [ranking]: res.data[1],
+        })
+
+        console.log("ranking: "+ this.data.ranking)
       }
     })
 
