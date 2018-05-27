@@ -170,7 +170,7 @@ onHide: function (){
       this.setData({
         remainTimeText: remainTimeText
       })
-      var uploadScore = this.data.oldScore + 1;
+      var uploadScore = parseInt(this.data.oldScore) + 1;
 
 
       wx.request({

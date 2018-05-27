@@ -33,6 +33,11 @@ Page({
   onShow: function () {
     var thispage = this;
 
+    var ranking = 'ranking';
+    this.setData({
+      [ranking]: 0,
+    })
+
     wx.request({
       url: 'https://server2.permanentliu.cn/', //仅为示例，并非真实的接口地址
       data: {
@@ -52,7 +57,7 @@ Page({
       }
     })
 
-    console.log("nickname: " + app.appData.userInfo.nickName)
+    //console.log("nickname: " + app.appData.userInfo.nickName)
 
     wx.request({
       url: 'https://server.permanentliu.cn/user?name=' + app.appData.userInfo.nickName,
@@ -60,7 +65,7 @@ Page({
         'content-type': 'application/json' // 默认值
       },
       success: function (res) {
-        console.log(res.data)
+        console.log("server: "+res.data[0])
 
         var ranking = 'ranking';
 
