@@ -218,7 +218,7 @@ onHide: function (){
       })
       //upload score
       var score = wx.getStorageSync('workTime')
-      var uploadScore = score * 60 + this.data.oldScore;
+      var uploadScore = score * 60 + parseInt(this.data.oldScore);
       console.log("upload score")
       
 
