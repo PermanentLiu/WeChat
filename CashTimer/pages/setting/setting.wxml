@@ -17,21 +17,10 @@
 
 	<view class="section panel">
 	  <view class="section_title">
-	  	<text>主页背景</text>
-	  </view>
-	  <view class="section_body">
-	  	<text bindtab="" class="section_tip">选择背景 > </text>
-	  </view>
-	</view>
-
-	<view class="section panel">
-	  <view class="section_title">
 	  	<switch class="section_check" type="checkbox" size="mini" checked bindchange="switch1Change"/>
-	  	<text>启用铃声</text>
+	  	<text>当计时结束后震动提醒我</text>
 	  </view>
-	  <view class="section_body">
-	  	<text bindtab="" class="section_tip">选择铃声 > </text>
-	  </view>
+
 	</view>
 
 </view>
